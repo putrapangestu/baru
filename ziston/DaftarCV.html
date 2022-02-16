@@ -54,6 +54,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <style>
+        [class=foto-profile]{
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        [class=foto-profile] +img{
+            cursor: pointer;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -128,11 +140,11 @@
     <!-- Navbar End -->
     
     <!-- Start home -->
-    <section class="page-header" style="background-image: url(assets/images/backgrounds/page-header-contact.jpg);">
-        <div class="container">
-            <h2>Pembuatan Portofolio</h2>
-        </div>
-    </section>
+      <section class="page-header" style="background-image: url(assets/images/backgrounds/page-header-contact.jpg);">
+            <div class="container">
+                <h2>Pembuatan Portofolio</h2>
+            </div>
+        </section>
     <!-- end home -->
 
     <!-- CREATE RESUME START -->
@@ -145,7 +157,9 @@
  
                 <div class="col-12 mt-3">
                     <div class="custom-form p-4 border rounded">
-                        <img src="https://via.placeholder.com/400X400//88929f/5a6270C/O https://placeholder.com/" class="img-fluid avatar avatar-medium d-block mx-auto rounded-pill" alt="">
+                      <center><label >
+                           <img src="https://via.placeholder.com/400X400//88929f/5a6270C/O https://placeholder.com/" class="img-fluid avatar avatar-medium d-block mx-auto rounded-pill" alt=""> <input type="file" name="profile" class="foto-profile">
+                        </label></center>
                         <form>
                             <div class="row mt-4">
                                 <div class="col-md-4">
